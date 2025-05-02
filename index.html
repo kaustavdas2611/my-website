@@ -1,143 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Kaustav Das - CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaustav Das | Cybersecurity & Data</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #f0f0f0;
-      font-family: Verdana, Arial, sans-serif;
-      color: #000;
-    }
-    .container {
-      width: 70%;
-      margin: 20px auto;
-      border: 1px solid #333;
-      background-color: #fff;
-      padding: 20px;
-    }
-    .header {
-      background-color: #336699;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      font-size: 28px;
-    }
-    .subheader {
-      background-color: #ccc;
-      padding: 5px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .content {
-      padding: 10px;
-    }
-    .content table {
-      width: 100%;
-      margin-top: 10px;
-    }
-    .content table td {
-      padding: 8px;
-      vertical-align: top;
-    }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #666;
-      margin-top: 20px;
-    }
+    body { font-family: 'Poppins', sans-serif; }
   </style>
 </head>
-<body>
+<body class="bg-gray-900 text-white">
 
-  <div class="container">
-    <div class="header">Kaustav Das - Curriculum Vitae</div>
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-5 bg-gray-800 shadow-lg">
+    <h1 class="text-2xl font-bold">Kaustav Das</h1>
+    <ul class="flex space-x-6">
+      <li><a href="#about" class="hover:text-cyan-400">About</a></li>
+      <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
+      <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
+      <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="content">
-      <div class="subheader">Personal Information</div>
-      <table>
-        <tr>
-          <td><b>Name:</b></td>
-          <td>Kaustav Das</td>
-        </tr>
-        <tr>
-          <td><b>Email:</b></td>
-          <td>ziodaskaustavtio@gmail.com</td>
-        </tr>
-        <tr>
-          <td><b>Phone:</b></td>
-          <td>+123 456 7890</td>
-        </tr>
-        <tr>
-          <td><b>Address:</b></td>
-          <td>Torino, Italia</td>
-        </tr>
-      </table>
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center py-20 px-5">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm <span class="text-cyan-400">Kaustav</span></h2>
+    <p class="text-lg md:text-xl max-w-2xl">Passionate about protecting digital systems & solving problems using <span class="text-cyan-300">code</span>, <span class="text-cyan-300">data</span>, and <span class="text-cyan-300">cybersecurity</span>.</p>
+    <a href="#projects" class="mt-8 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full shadow-md transition">See My Work</a>
+  </section>
 
-      <div class="subheader">Education</div>
-      <table>
-        <tr>
-          <td><b>Degree:</b></td>
-          <td>Bachelor of Science in Computer Engineering</td>
-        </tr>
-        <tr>
-          <td><b>University:</b></td>
-          <td><a href="https://www.polito.it" target="_blank">Politecnico di Torino</a></td>
-        </tr>
-        <tr>
-          <td><b>Year:</b></td>
-          <td>2025 (Expected)</td>
-        </tr>
-      </table>
+  <!-- About Section -->
+  <section id="about" class="py-16 px-5 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+    <p class="text-gray-300 leading-relaxed">I'm a Computer Engineering student at Politecnico di Torino, passionate about Cybersecurity, Data Analytics, and AI-powered solutions. Currently exploring SOC operations, scalable backend systems, and threat detection techniques. Actively looking for internship opportunities in cybersecurity or software development roles.</p>
+  </section>
 
-      <div class="subheader">Skills</div>
-      <table>
-        <tr>
-          <td><b>Programming Languages:</b></td>
-          <td>Network Security | Threat Detection & Analysis | SIEM Concepts | Python | Java | SQL | Data Analysis | Machine Learning (basics) | Cybersecurity (basics) | Algorithms & Data Structures | Git | Linux</td>
-        </tr>
-        <tr>
-          <td><b>Software Tools:</b></td>
-          <td>Git, VSCode, Jupyter Notebook</td>
-        </tr>
-        <tr>
-          <td><b>Other Skills:</b></td>
-          <td>Problem-Solving, Team Collaboration, Communication</td>
-        </tr>
-      </table>
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-5 bg-gray-800">
+    <h3 class="text-3xl font-semibold mb-10 text-center">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-bold mb-2">Suspicious Sales Detector</h4>
+        <p class="text-gray-300">Python tool for analyzing product & purchase data to detect suspicious sales patterns at PoliTo.</p>
+        <a href="#" class="text-cyan-400 mt-3 inline-block">View Project</a>
+      </div>
 
-      <div class="subheader">Experience</div>
-      <table>
-        <tr>
-          <td><b>Internship:</b></td>
-          <td>Software Development Intern at XYZ Corp.</td>
-        </tr>
-        <tr>
-          <td><b>Dates:</b></td>
-          <td>June 2024 - August 2024</td>
-        </tr>
-        <tr>
-          <td><b>Responsibilities:</b></td>
-          <td>Developed Python applications, collaborated in team projects, tested software for bugs.</td>
-        </tr>
-      </table>
+      <!-- Another Project Card -->
+      <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-bold mb-2">Threat Detection System</h4>
+        <p class="text-gray-300">Lightweight Java-based system to monitor and flag potential cybersecurity threats in networks.</p>
+        <a href="#" class="text-cyan-400 mt-3 inline-block">View Project</a>
+      </div>
 
-      <div class="subheader">Languages</div>
-      <table>
-        <tr>
-          <td><b>English:</b></td>
-          <td>Fluent</td>
-        </tr>
-        <tr>
-          <td><b>Spanish:</b></td>
-          <td>Intermediate</td>
-        </tr>
-      </table>
+      <!-- Another Project Card -->
+      <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-bold mb-2">Data Dashboard</h4>
+        <p class="text-gray-300">Interactive dashboard built with Python & SQL to visualize and analyze large datasets.</p>
+        <a href="#" class="text-cyan-400 mt-3 inline-block">View Project</a>
+      </div>
     </div>
+  </section>
 
-    <div class="footer">
-      &copy; 2025 Kaustav Das | All Rights Reserved
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-5 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6">Skills</h3>
+    <div class="flex flex-wrap gap-4">
+      <span class="bg-cyan-600 px-4 py-2 rounded-full">Python</span>
+      <span class="bg-cyan-600 px-4 py-2 rounded-full">Java</span>
+      <span class="bg-cyan-600 px-4 py-2 rounded-full">SQL</span>
+      <span class="bg-cyan-600 px-4 py-2 rounded-full">Cybersecurity</span>
+      <span class="bg-cyan-600 px-4 py-2 rounded-full">Data Analytics</span>
+      <span class="bg-cyan-600 px-4 py-2 rounded-full">Threat Detection</span>
     </div>
-  </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-5 bg-gray-800">
+    <h3 class="text-3xl font-semibold mb-6 text-center">Contact Me</h3>
+    <p class="text-center text-gray-300 mb-6">Let’s connect and build something amazing!</p>
+    <div class="flex justify-center space-x-6">
+      <a href="mailto:kaustav@example.com" class="hover:text-cyan-400">Email</a>
+      <a href="https://github.com/kaustavdas2611" target="_blank" class="hover:text-cyan-400">GitHub</a>
+      <a href="https://linkedin.com/in/kaustavdas2611" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 text-gray-500 text-sm">© 2025 Kaustav Das. All rights reserved.</footer>
 
 </body>
 </html>
