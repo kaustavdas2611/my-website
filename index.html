@@ -6,14 +6,24 @@
   <title>Kaustav Das | Cybersecurity & Data</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Typed.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
     body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
     .dark-mode { background-color: #111827; color: white; }
     .glow:hover { text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee; }
+    .timeline-dot {
+      width: 16px;
+      height: 16px;
+      background-color: #22d3ee;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+    }
   </style>
 </head>
 <body class="bg-gray-900 text-white" id="body">
@@ -22,12 +32,11 @@
   <nav class="flex justify-between items-center p-5 bg-gray-800 shadow-lg">
     <h1 class="text-2xl font-bold glow">Kaustav Das</h1>
     <ul class="flex space-x-6">
-      <li><a href="#about" class="hover:text-cyan-400 glow">About</a></li>
+      <li><a href="#journey" class="hover:text-cyan-400 glow">Journey</a></li>
       <li><a href="#projects" class="hover:text-cyan-400 glow">Projects</a></li>
       <li><a href="#skills" class="hover:text-cyan-400 glow">Skills</a></li>
       <li><a href="#contact" class="hover:text-cyan-400 glow">Contact</a></li>
     </ul>
-    <!-- Dark Mode Toggle -->
     <button onclick="toggleDarkMode()" class="ml-4 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full transition">Toggle Dark Mode</button>
   </nav>
 
@@ -40,24 +49,47 @@
     <a href="#projects" class="mt-8 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full shadow-md transition">See My Work</a>
   </section>
 
- <!-- About Section -->
-<section id="about" class="py-16 px-5 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10" data-aos="fade-right">
-  <!-- Landscape Photo -->
-  <img src="kaustav.jpg" alt="Kaustav Das Photo" 
-       class="w-full md:w-96 h-auto rounded-2xl object-cover shadow-lg border-4 border-cyan-500 hover:scale-105 transition" />
-
-  <!-- Text -->
-  <div>
-    <h3 class="text-3xl font-semibold mb-6">About Me</h3>
-    <p class="text-gray-300 leading-relaxed">I'm a Computer Engineering student at Politecnico di Torino, passionate about Cybersecurity, Data Analytics, and AI-powered solutions. Currently exploring SOC operations, scalable backend systems, and threat detection techniques. Actively looking for internship opportunities in cybersecurity or software development roles.</p>
-  </div>
-</section>
-
-
-    <!-- Text -->
+  <!-- Journey Section -->
+  <section id="journey" class="py-16 px-5 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10" data-aos="fade-right">
+    <img src="kaustav.jpg" alt="Kaustav Das Photo" 
+         class="w-full md:w-96 h-auto rounded-2xl object-cover shadow-lg border-4 border-cyan-500 hover:scale-105 transition" />
     <div>
-      <h3 class="text-3xl font-semibold mb-6">About Me</h3>
-      <p class="text-gray-300 leading-relaxed">I'm a Computer Engineering student at Politecnico di Torino, passionate about Cybersecurity, Data Analytics, and AI-powered solutions. Currently exploring SOC operations, scalable backend systems, and threat detection techniques. Actively looking for internship opportunities in cybersecurity or software development roles.</p>
+      <h3 class="text-3xl font-semibold mb-6">Experience the Journey</h3>
+      <p class="text-gray-300 leading-relaxed mb-4">From coding my first Python script to building systems that detect cyber threats — my journey is driven by curiosity and the thrill of problem-solving. 🚀</p>
+      <p class="text-gray-300 leading-relaxed mb-4">I'm not just exploring <span class="text-cyan-300">Cybersecurity</span> and <span class="text-cyan-300">Data Analytics</span> — I'm crafting solutions, breaking barriers, and always learning what's next in this digital frontier.</p>
+      <p class="text-gray-300 leading-relaxed">Let’s connect, collaborate, and build tech that makes an impact!</p>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-16 px-5 max-w-5xl mx-auto" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold mb-10 text-center">Milestones</h3>
+    <div class="border-l-4 border-cyan-500 pl-6 space-y-10">
+
+      <div class="relative">
+        <div class="timeline-dot absolute -left-8 top-1"></div>
+        <h4 class="text-xl font-bold text-cyan-400">2022 - Started Computer Engineering at PoliTo</h4>
+        <p class="text-gray-300 leading-relaxed">Embarked on the journey into tech, diving deep into coding, systems, and security fundamentals at Politecnico di Torino.</p>
+      </div>
+
+      <div class="relative">
+        <div class="timeline-dot absolute -left-8 top-1"></div>
+        <h4 class="text-xl font-bold text-cyan-400">2023 - Built My First Threat Detection System</h4>
+        <p class="text-gray-300 leading-relaxed">Developed a lightweight system in Java that flags suspicious activities in networks — my first real-world cybersecurity project.</p>
+      </div>
+
+      <div class="relative">
+        <div class="timeline-dot absolute -left-8 top-1"></div>
+        <h4 class="text-xl font-bold text-cyan-400">2024 - Data Dashboard for Large-Scale Analytics</h4>
+        <p class="text-gray-300 leading-relaxed">Created an interactive dashboard using Python & SQL to visualize and analyze datasets, unlocking patterns and insights.</p>
+      </div>
+
+      <div class="relative">
+        <div class="timeline-dot absolute -left-8 top-1"></div>
+        <h4 class="text-xl font-bold text-cyan-400">2025 - Ready for Internship Challenges</h4>
+        <p class="text-gray-300 leading-relaxed">Actively seeking opportunities to apply my skills in cybersecurity, data analytics, and backend development in dynamic roles.</p>
+      </div>
+
     </div>
   </section>
 
@@ -65,21 +97,16 @@
   <section id="projects" class="py-16 px-5 bg-gray-800">
     <h3 class="text-3xl font-semibold mb-10 text-center" data-aos="zoom-in">Projects</h3>
     <div class="grid md:grid-cols-3 gap-8">
-      <!-- Project Card -->
       <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition" data-aos="fade-up">
         <h4 class="text-xl font-bold mb-2">Suspicious Sales Detector</h4>
         <p class="text-gray-300">Python tool for analyzing product & purchase data to detect suspicious sales patterns at PoliTo.</p>
         <a href="#" class="text-cyan-400 mt-3 inline-block">View Project</a>
       </div>
-
-      <!-- Another Project Card -->
       <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
         <h4 class="text-xl font-bold mb-2">Threat Detection System</h4>
         <p class="text-gray-300">Lightweight Java-based system to monitor and flag potential cybersecurity threats in networks.</p>
         <a href="#" class="text-cyan-400 mt-3 inline-block">View Project</a>
       </div>
-
-      <!-- Another Project Card -->
       <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
         <h4 class="text-xl font-bold mb-2">Data Dashboard</h4>
         <p class="text-gray-300">Interactive dashboard built with Python & SQL to visualize and analyze large datasets.</p>
@@ -114,14 +141,12 @@
 
   <footer class="text-center py-4 text-gray-500 text-sm">© 2025 Kaustav Das. All rights reserved.</footer>
 
-  <!-- AOS Animation Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
     function toggleDarkMode() {
       document.getElementById('body').classList.toggle('dark-mode');
     }
-    // Typed.js Animation
     new Typed('#typed', {
       strings: ["Hello, I'm <span class='text-cyan-400'>Kaustav</span>", "I'm a Cybersecurity Enthusiast", "I'm a Data Explorer", "Let's Build Something Cool!"],
       typeSpeed: 50,
