@@ -6,24 +6,14 @@
   <title>Kaustav Das | Cybersecurity & Data</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Typed.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
     body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
     .dark-mode { background-color: #111827; color: white; }
     .glow:hover { text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee; }
-    .timeline-dot {
-      width: 16px;
-      height: 16px;
-      background-color: #22d3ee;
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.7); }
-      70% { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
-    }
   </style>
 </head>
 <body class="bg-gray-900 text-white" id="body">
@@ -49,47 +39,40 @@
     <a href="#projects" class="mt-8 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full shadow-md transition">See My Work</a>
   </section>
 
-  <!-- Journey Section -->
-  <section id="journey" class="py-16 px-5 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10" data-aos="fade-right">
-    <img src="kaustav.jpg" alt="Kaustav Das Photo" 
-         class="w-full md:w-96 h-auto rounded-2xl object-cover shadow-lg border-4 border-cyan-500 hover:scale-105 transition" />
-    <div>
-      <h3 class="text-3xl font-semibold mb-6">Experience the Journey</h3>
-      <p class="text-gray-300 leading-relaxed mb-4">From coding my first Python script to building systems that detect cyber threats — my journey is driven by curiosity and the thrill of problem-solving. 🚀</p>
-      <p class="text-gray-300 leading-relaxed mb-4">I'm not just exploring <span class="text-cyan-300">Cybersecurity</span> and <span class="text-cyan-300">Data Analytics</span> — I'm crafting solutions, breaking barriers, and always learning what's next in this digital frontier.</p>
-      <p class="text-gray-300 leading-relaxed">Let’s connect, collaborate, and build tech that makes an impact!</p>
-    </div>
-  </section>
+  <!-- Experience the Journey Section -->
+  <section id="journey" class="py-16 px-5 max-w-5xl mx-auto" data-aos="fade-right">
+    <h3 class="text-3xl font-semibold mb-10 text-center">Experience the Journey</h3>
+    <p class="text-gray-300 leading-relaxed text-center max-w-3xl mx-auto mb-12">From writing my first Python script to gradually exploring the world of cybersecurity and data analytics — my journey so far has been all about learning, growing, and staying curious. I'm continually building my skills, exploring new ideas, and looking forward to contributing more in this evolving digital space.</p>
 
-  <!-- Timeline Section -->
-  <section id="timeline" class="py-16 px-5 max-w-5xl mx-auto" data-aos="fade-up">
-    <h3 class="text-3xl font-semibold mb-10 text-center">Milestones</h3>
-    <div class="border-l-4 border-cyan-500 pl-6 space-y-10">
-
-      <div class="relative">
-        <div class="timeline-dot absolute -left-8 top-1"></div>
-        <h4 class="text-xl font-bold text-cyan-400">2022 - Started Computer Engineering at PoliTo</h4>
-        <p class="text-gray-300 leading-relaxed">Embarked on the journey into tech, diving deep into coding, systems, and security fundamentals at Politecnico di Torino.</p>
+    <!-- Timeline -->
+    <div class="relative border-l-2 border-cyan-500 ml-6">
+      <!-- Milestone 1 -->
+      <div class="mb-10 ml-6" data-aos="fade-up">
+        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full mt-1.5 -left-2 border-4 border-gray-900 animate-pulse"></div>
+        <h4 class="text-xl font-bold">Started Coding</h4>
+        <p class="text-gray-300">Discovered Python and began exploring the basics of programming and problem-solving.</p>
       </div>
 
-      <div class="relative">
-        <div class="timeline-dot absolute -left-8 top-1"></div>
-        <h4 class="text-xl font-bold text-cyan-400">2023 - Built My First Threat Detection System</h4>
-        <p class="text-gray-300 leading-relaxed">Developed a lightweight system in Java that flags suspicious activities in networks — my first real-world cybersecurity project.</p>
+      <!-- Milestone 2 -->
+      <div class="mb-10 ml-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full mt-1.5 -left-2 border-4 border-gray-900 animate-pulse"></div>
+        <h4 class="text-xl font-bold">Exploring Cybersecurity</h4>
+        <p class="text-gray-300">Gained interest in protecting digital systems and started learning about SOC operations and threat detection.</p>
       </div>
 
-      <div class="relative">
-        <div class="timeline-dot absolute -left-8 top-1"></div>
-        <h4 class="text-xl font-bold text-cyan-400">2024 - Data Dashboard for Large-Scale Analytics</h4>
-        <p class="text-gray-300 leading-relaxed">Created an interactive dashboard using Python & SQL to visualize and analyze datasets, unlocking patterns and insights.</p>
+      <!-- Milestone 3 -->
+      <div class="mb-10 ml-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full mt-1.5 -left-2 border-4 border-gray-900 animate-pulse"></div>
+        <h4 class="text-xl font-bold">Building Projects</h4>
+        <p class="text-gray-300">Worked on small tools and dashboards, applying my skills in data analytics and backend development.</p>
       </div>
 
-      <div class="relative">
-        <div class="timeline-dot absolute -left-8 top-1"></div>
-        <h4 class="text-xl font-bold text-cyan-400">2025 - Ready for Internship Challenges</h4>
-        <p class="text-gray-300 leading-relaxed">Actively seeking opportunities to apply my skills in cybersecurity, data analytics, and backend development in dynamic roles.</p>
+      <!-- Milestone 4 -->
+      <div class="ml-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="absolute w-4 h-4 bg-cyan-400 rounded-full mt-1.5 -left-2 border-4 border-gray-900 animate-pulse"></div>
+        <h4 class="text-xl font-bold">Still Learning & Growing</h4>
+        <p class="text-gray-300">Continuing to expand my knowledge in cybersecurity, data, and software development while looking forward to new challenges.</p>
       </div>
-
     </div>
   </section>
 
@@ -102,11 +85,13 @@
         <p class="text-gray-300">Python tool for analyzing product & purchase data to detect suspicious sales patterns at PoliTo.</p>
         <a href="#" class="text-cyan-400 mt-3 inline-block">View Project</a>
       </div>
+
       <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
         <h4 class="text-xl font-bold mb-2">Threat Detection System</h4>
         <p class="text-gray-300">Lightweight Java-based system to monitor and flag potential cybersecurity threats in networks.</p>
         <a href="#" class="text-cyan-400 mt-3 inline-block">View Project</a>
       </div>
+
       <div class="bg-gray-700 rounded-xl p-5 shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
         <h4 class="text-xl font-bold mb-2">Data Dashboard</h4>
         <p class="text-gray-300">Interactive dashboard built with Python & SQL to visualize and analyze large datasets.</p>
@@ -131,7 +116,7 @@
   <!-- Contact Section -->
   <section id="contact" class="py-16 px-5 bg-gray-800" data-aos="fade-up">
     <h3 class="text-3xl font-semibold mb-6 text-center">Contact Me</h3>
-    <p class="text-center text-gray-300 mb-6">Let’s connect and build something amazing!</p>
+    <p class="text-center text-gray-300 mb-6">Let’s connect and learn together!</p>
     <div class="flex justify-center space-x-6">
       <a href="mailto:kaustav@example.com" class="hover:text-cyan-400 glow">Email</a>
       <a href="https://github.com/kaustavdas2611" target="_blank" class="hover:text-cyan-400 glow">GitHub</a>
